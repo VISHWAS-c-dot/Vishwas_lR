@@ -252,7 +252,7 @@ int main(int argc, char* argv[])
       IOCnfg.targTCP.mode = TMWTARGTCP_MODE_DUAL_ENDPOINT;
 
       /* if dual end point, the ip address of the master must be specified */
-      strcpy(IOCnfg.targTCP.ipAddress, "127.0.0.1");
+      strcpy(IOCnfg.targTCP.ipAddress, "192.168.1.8");//Vishwas 127.0.0.1
 
       /* This is the port to send connect request to when the outstation initiates the connection */
       IOCnfg.targTCP.dualEndPointIpPort = 20000;
@@ -266,7 +266,7 @@ int main(int argc, char* argv[])
       linkConfig.networkType = DNPLINK_NETWORK_UDP_ONLY;
 
       /* if UDP ONLY, the IP address of the master must be specified */
-      strcpy(IOCnfg.targTCP.ipAddress, "127.0.0.1");
+      strcpy(IOCnfg.targTCP.ipAddress, "192.168.1.8");//Vishwas 127.0.0.1
       
       /* Choose the local UDP port to send and receive on */
       IOCnfg.targTCP.localUDPPort = 20000;

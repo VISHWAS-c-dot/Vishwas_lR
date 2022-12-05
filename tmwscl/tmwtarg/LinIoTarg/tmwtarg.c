@@ -338,7 +338,7 @@ int _LinuxSemCreate(pthread_mutex_t **sem)
   if (newSem == NULL)
     return(0);
   pthread_mutexattr_init(&initializer);
-  pthread_mutexattr_setkind_np(&initializer, PTHREAD_MUTEX_RECURSIVE_NP);
+  // pthread_mutexattr_setkind_np(&initializer, PTHREAD_MUTEX_RECURSIVE_NP);
   pthread_mutex_init(newSem, &initializer);
   pthread_mutexattr_destroy(&initializer);
   *sem = newSem;
